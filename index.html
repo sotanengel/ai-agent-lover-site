@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AI Agent Lover — terminal-style desktop game. Tauri + React."
+    />
+    <title>AI Agent Lover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="shell">
+      <div class="shell__bar">
+        <span class="shell__dots" aria-hidden="true"></span>
+        <span class="shell__title">ai-agent-lover — zsh</span>
+        <span class="shell__meta">~/games</span>
+      </div>
+
+      <pre class="ascii ascii--hero" aria-hidden="true">
+╔═══════════════════════════════════════════════════════════╗
+║  <span class="ascii__accent">AI Agent Lover</span>                                           ║
+║  <span class="ascii__dim">approval discipline simulator</span>                          ║
+╚═══════════════════════════════════════════════════════════╝</pre>
+
+      <p class="tagline">
+        <span class="prompt" aria-hidden="true">❯</span>
+        <span id="typed"></span><span class="cursor" aria-hidden="true">▍</span>
+      </p>
+
+      <nav class="cta" aria-label="Primary">
+        <a class="btn btn--primary" href="https://github.com/sotanengel/ai-code-agent-lover" data-hover>
+          <span class="btn__sig">⎇</span> source
+        </a>
+        <a class="btn btn--ghost" href="#spec" data-hover> ./README.md </a>
+        <span class="badge badge--soon" title="Steam で近日公開予定">steam: pending</span>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <section id="spec" class="panel">
+        <h2 class="panel__h"><span class="hash">#</span> spec</h2>
+        <dl class="kv">
+          <dt>runtime</dt>
+          <dd>Tauri 2 · WebView2 / WKWebView</dd>
+          <dt>ui</dt>
+          <dd>React 19 · TypeScript · Vite</dd>
+          <dt>state</dt>
+          <dd>Zustand · terminal-first UX</dd>
+          <dt>package</dt>
+          <dd><code>ai-agent-lover</code> @ desktop</dd>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__h"><span class="hash">#</span> loop</h2>
+        <ol class="steps">
+          <li>シーンがターミナルに流れる（ログ風出力）</li>
+          <li>承認プロンプトで <kbd>Y</kbd> / <kbd>N</kbd> やコマンドで判断</li>
+          <li>危険コマンドとタイムアウトを避けてスコアを稼ぐ</li>
+          <li>モード・雰囲気デンジャー率は設定から調整可能</li>
+        </ol>
+      </section>
+
+      <section class="panel panel--wide">
+        <h2 class="panel__h"><span class="hash">#</span> cli <span class="hint">in-game</span></h2>
+        <div class="codeblock" role="region" aria-label="Example commands">
+          <div class="codeblock__gutter" aria-hidden="true">
+            01<br />02<br />03<br />04<br />05
+          </div>
+          <pre><code><span class="cmd">/start</span>             <span class="cmt"># ゲーム開始</span>
+<span class="cmd">/mode</span> daily        <span class="cmt"># daily | endless | practice | ambient</span>
+<span class="cmd">/displays</span> 2      <span class="cmt"># ログのみのサブ画面を別ウィンドウで</span>
+<span class="cmd">/popout</span>          <span class="cmt"># メインターミナルをミラー</span>
+<span class="cmd">/help</span>            <span class="cmt"># コマンド一覧</span></code></pre>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel__h"><span class="hash">#</span> build</h2>
+        <pre class="mono-block"><code>git clone https://github.com/sotanengel/ai-code-agent-lover.git
+cd ai-code-agent-lover
+npm install
+npm run tauri dev</code></pre>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>
+        <span class="foot__muted">©</span> AI Agent Lover
+        <span class="foot__sep">·</span>
+        <a href="https://github.com/sotanengel/ai-agent-lover-site">this site</a>
+      </p>
+      <p class="foot__tiny">GitHub Pages · no trackers · MIT-ish vibes</p>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
