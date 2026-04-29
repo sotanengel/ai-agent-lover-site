@@ -11,6 +11,9 @@
    **https://sotanengel.github.io/ai-agent-lover-site/**  
    に反映される（`404` のときは設定保存後にもう一度待つ）。
 
+**プライバシー方針（Steam 等の「プライバシーポリシー URL」用）:**  
+<https://sotanengel.github.io/ai-agent-lover-site/POLICY.md>
+
 ## ローカル確認
 
 ルートに `index.html` があるので、任意の静的サーバで開いてください。
