@@ -6,8 +6,7 @@
 
 本ゲームおよび本ポリシーに関するお問い合わせ先:
 
-- 開発: yama_yama_game
-- 公式 X（案内・更新）: [https://x.com/ai_agent_love](https://x.com/ai_agent_love)
+- お問い合わせ: [GitHub Issues](https://github.com/sotanengel/ai-code-agent-lover/issues) · [公式 X \@ai_agent_love](https://x.com/ai_agent_love)
 - ソースコード: [https://github.com/sotanengel/ai-code-agent-lover](https://github.com/sotanengel/ai-code-agent-lover)
 
 ## 本ドキュメントの公開 URL
